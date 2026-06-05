@@ -3,7 +3,7 @@
   "Name": "Glamour This",
   "InternalName": "GlamourThis",
   "Punchline": "A fast, filterable replacement for the Glamour Dresser and Armoire.",
-  "Description": "Glamour This replaces the in-game Glamour Dresser and Armoire workflow with a searchable, sortable overlay. Find armor and outfit sets instantly, spot duplicates at a glance, group pieces into their outfit glamour sets, and pull items in or out while standing at a dresser.\n\nMain command: /glamthis (alias /gt).",
+  "Description": "Glamour This puts a searchable, sortable overlay over your Glamour Dresser. Find armor and outfit sets instantly, spot duplicates at a glance, filter by location, slot or expansion, group pieces into their outfit glamour sets, and pull pieces out of the dresser into your bags while standing at a dresser.\n\nMain command: /glamthis (alias /gt).",
   "ApplicableVersion": "any",
   "RepoUrl": "https://github.com/Tiberius1OOO/glamour_this",
   "Tags": [

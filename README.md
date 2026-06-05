@@ -1,23 +1,65 @@
 # Glamour This
 
-A Dalamud plugin for FINAL FANTASY XIV that replaces the Glamour Dresser and Armoire workflow
-with a fast, filterable browser. Find armor and outfit sets instantly, spot duplicates at a glance,
-group pieces into their outfit glamour sets, and pull items in or out while standing at a dresser.
+A Dalamud plugin for FINAL FANTASY XIV that puts a fast, filterable browser over your Glamour
+Dresser. Find armor and outfit sets instantly, spot duplicates at a glance, group pieces into their
+outfit glamour sets, and pull pieces out of the dresser into your bags while standing at a dresser.
+
+The window can be opened any time to browse, search and sort. The pull action only works while an
+in-game Glamour Dresser is open.
 
 ## Features
 
-- A searchable, sortable overlay over the Glamour Dresser, Armoire and (optionally) your bags.
-- Instant text search and filtering by equipment slot.
-- Duplicate detection with highlighting, so wasted dresser space is easy to spot.
-- Outfit set grouping built from the game's outfit glamour data, showing owned / total pieces and
-  which slots are still missing.
-- "Outfit Glamour-ready" badges that mirror the in-game marker.
-- Pull-out / put-back actions for single items and complete outfits (active while a dresser is open).
+- A searchable overlay over the Glamour Dresser, Armoire, your bags and the Armoury Chest.
+- Opens automatically when you open the in-game Glamour Dresser (can be turned off).
+- Instant text search by item name.
+- Filtering by:
+  - Location: Dresser, Armoire, Bags / Armoury, or Everywhere.
+  - Equipment slot (weapon, head, body, ring, and so on).
+  - Expansion, approximated from each item's required level; level 1 cosmetic and event gear is
+    grouped under "Special (Lv 1)".
+  - Duplicates only, to show just the items you hold more than one of.
+  - Outfit-ready only.
+- Sorting by name, equipment slot, item level, or duplicate count (most copies first).
+- Duplicate detection with row highlighting across the dresser, bags and Armoury, so wasted dresser
+  space is easy to spot.
+- An Armoire toggle to include or hide the (effectively unlimited) cabinet items and focus on the
+  dresser.
+
+### Items tab
+
+Lists individual pieces with their slot, location, item level and how many copies you own. Each row
+has a **Pull** button that moves one copy from the dresser into your bags. Pulling is left to the
+dresser only; putting items back is done through the native dresser window.
+
+### Sets tab
+
+Groups pieces into the game's outfit glamour sets, showing how many of each set's pieces you own and
+which slots are still missing. Markers show whether a set is **complete** (you own every piece) and
+whether it is already **stored** as a single outfit slot. Each owned piece has its own **Pull**
+button so you can take out one piece per click.
+
+With the **Outfit-ready** filter enabled, the Sets tab lists only complete sets you can still store
+as an outfit. Pulling a piece into your bags keeps the set on the list (the piece is still owned),
+and a set drops off the list on its own once it has been stored as an outfit, so you can work
+straight down the list.
+
+## Pulling
+
+- Each click pulls a single piece; the row greys out immediately once it is on its way to your bags.
+- A short delay between pulls keeps every press a deliberate single action.
+- If a piece can't be pulled because you already hold a one-of-a-kind copy (for example the same
+  item in your Armoury or Armoire), the plugin reports the reason instead of failing silently.
 
 ## Commands
 
 - `/glamthis` - open or close the browser.
 - `/gt` - shortcut for the same.
+
+## Settings
+
+- Open automatically with the Glamour Dresser.
+- Highlight duplicate items.
+- Icon size for the item list.
 
 ## Building
 
