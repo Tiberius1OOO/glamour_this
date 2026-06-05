@@ -1,0 +1,17 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.suo
+
+# Packaging output produced by Dalamud.NET.Sdk
+dist/
+packages/
+
+# OS noise
+Thumbs.db
+.DS_Store
