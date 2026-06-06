@@ -81,8 +81,16 @@ The built plugin (and its packaging output) is produced under `GlamourThis/bin/`
 
 ## Self-hosted repository
 
-`repo.json` in the repository root is a Dalamud custom plugin repository manifest. Add its raw URL to
-Dalamud's custom repository list to install and update the plugin from GitHub releases.
+`repo.json` in the repository root is a Dalamud custom plugin repository manifest. To install and
+update the plugin from GitHub releases, add its raw URL to Dalamud's custom repository list:
+
+```
+https://raw.githubusercontent.com/Tiberius1OOO/glamour_this/main/repo.json
+```
+
+To add it in-game: open `/xlsettings` -> **Experimental** -> **Custom Plugin Repositories**, paste
+the URL, press the **+** button, then **Save and Close**. Glamour This will then appear in the plugin
+installer.
 
 ## Disclaimer
 
